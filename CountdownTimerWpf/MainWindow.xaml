@@ -1,0 +1,31 @@
+<Window x:Class="CountdownTimerWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Countdown Timer"
+        Height="180"
+        Width="320"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Minutes:" VerticalAlignment="Center" />
+
+        <TextBox x:Name="MinutesTextBox"
+                 Grid.Row="1"
+                 Margin="0,8,0,0"
+                 Height="28"
+                 VerticalContentAlignment="Center"
+                 Text="1" />
+
+        <Button x:Name="StartButton"
+                Grid.Row="2"
+                Margin="0,12,0,0"
+                Height="32"
+                Content="Start Timer"
+                Click="StartButton_Click" />
+    </Grid>
+</Window>

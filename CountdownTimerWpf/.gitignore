@@ -1,0 +1,97 @@
+# .gitignore for .NET 10 / Visual Studio (WPF C#)
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.cache
+
+# Build results
+bin/
+obj/
+out/
+artifacts/
+TestResults/
+
+# Publish outputs
+publish/
+wwwroot/published/
+
+# NuGet
+*.nupkg
+.packages/
+.nuget/
+.vspackages/
+
+# Rider / JetBrains IDEs
+.idea/
+*.sln.iml
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific files
+*.userprefs
+*.pidb
+*.svclog
+
+# Dotnet and SDK tooling
+project.lock.json
+project.fragment.lock.json
+.dotnet/
+global.json
+*.runtimeconfig.dev.json
+
+# Entity Framework / Local DB
+*.mdf
+*.ldf
+*.ndf
+*.db
+
+# Logs, telemetry, and temporary files
+*.log
+*.tlog
+*.vspscc
+*.vsscc
+*.cache
+*.bak
+*.backup
+*.tmp
+
+# Secrets and credentials
+secrets.json
+appsettings.Development.json
+*.publishsettings
+*.pfx
+*.key
+*.pem
+
+# Package/lock files that can be restored
+packages.lock.json
+
+# Generated files
+*.g.*
+*.generated.*
+*_i.c
+*_p.c
+*_h.h
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
+Icon?
+
+# Test coverage
+coverage/
+*.coverage
+*.coveragexml

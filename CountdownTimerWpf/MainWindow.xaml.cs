@@ -63,7 +63,7 @@ public partial class MainWindow : Window
     private void UpdateWindowTitle()
     {
         Title = _remaining > TimeSpan.Zero
-            ? $"Countdown Timer - Remaining: {_remaining:mm\\:ss}"
+            ? $"{_remaining:mm\\:ss}"
             : "Countdown Timer";
     }
 
